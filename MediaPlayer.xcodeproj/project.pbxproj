@@ -15,6 +15,8 @@
 		51374C1C20A41F9200490023 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 51374C1B20A41F9200490023 /* main.m */; };
 		51374C2620A41F9200490023 /* MediaPlayerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 51374C2520A41F9200490023 /* MediaPlayerTests.m */; };
 		51374C3120A41F9200490023 /* MediaPlayerUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 51374C3020A41F9200490023 /* MediaPlayerUITests.m */; };
+		51374C4020A4201400490023 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 51374C3F20A4201400490023 /* AVFoundation.framework */; };
+		51374C4220A4208100490023 /* audio.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 51374C4120A4208100490023 /* audio.mp3 */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +53,8 @@
 		51374C2C20A41F9200490023 /* MediaPlayerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MediaPlayerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		51374C3020A41F9200490023 /* MediaPlayerUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MediaPlayerUITests.m; sourceTree = "<group>"; };
 		51374C3220A41F9200490023 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		51374C3F20A4201400490023 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		51374C4120A4208100490023 /* audio.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = audio.mp3; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +62,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				51374C4020A4201400490023 /* AVFoundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -85,6 +90,7 @@
 				51374C2420A41F9200490023 /* MediaPlayerTests */,
 				51374C2F20A41F9200490023 /* MediaPlayerUITests */,
 				51374C0A20A41F7D00490023 /* Products */,
+				51374C3E20A4201400490023 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -110,6 +116,7 @@
 				51374C1720A41F9200490023 /* LaunchScreen.storyboard */,
 				51374C1A20A41F9200490023 /* Info.plist */,
 				51374C1B20A41F9200490023 /* main.m */,
+				51374C4120A4208100490023 /* audio.mp3 */,
 			);
 			path = MediaPlayer;
 			sourceTree = "<group>";
@@ -130,6 +137,14 @@
 				51374C3220A41F9200490023 /* Info.plist */,
 			);
 			path = MediaPlayerUITests;
+			sourceTree = "<group>";
+		};
+		51374C3E20A4201400490023 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				51374C3F20A4201400490023 /* AVFoundation.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -236,6 +251,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				51374C1920A41F9200490023 /* LaunchScreen.storyboard in Resources */,
+				51374C4220A4208100490023 /* audio.mp3 in Resources */,
 				51374C1620A41F9200490023 /* Assets.xcassets in Resources */,
 				51374C1420A41F7D00490023 /* Main.storyboard in Resources */,
 			);
@@ -434,7 +450,9 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = C4WTFTW542;
 				INFOPLIST_FILE = MediaPlayer/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -450,7 +468,9 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = C4WTFTW542;
 				INFOPLIST_FILE = MediaPlayer/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
